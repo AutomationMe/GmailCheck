@@ -46,7 +46,7 @@ namespace GmailCheck.Pages
             credentials _cred = new credentials();
 
 
-            string packageJson = File.ReadAllText("");
+            string packageJson = File.ReadAllText("F:\\Anju Learning\\C# Programs\\GmailCheck\\Data\\credentials.cs");
 
             _cred = JsonConvert.DeserializeObject<credentials>(packageJson);
 
