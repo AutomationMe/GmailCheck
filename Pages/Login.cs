@@ -44,6 +44,15 @@ namespace GmailCheck.Pages
         public void _EnterPassword()
         {
 
+            credentials _cred = new credentials();
+
+
+            string packageJson = File.ReadAllText("F:\\Anju Learning\\C# Programs\\GmailCheck\\Data\\credentials.cs");
+
+            _cred = JsonConvert.DeserializeObject<credentials>(packageJson);
+
+            var _user = Initialise._driver.FindElement(_userName);
+            EnterValue(_userName, _user, _cred.password);
 
         }
         public void _ClickUserNext()

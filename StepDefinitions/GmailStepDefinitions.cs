@@ -25,7 +25,7 @@ namespace GmailCheck.StepDefinitions
         [When("User should be able to logged in")]
         public void WhenUserIsLoggedInToGmail()
         {
-            //_main.Login();
+            //Login();
 
         }
 
