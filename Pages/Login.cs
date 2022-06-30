@@ -43,7 +43,6 @@ namespace GmailCheck.Pages
         }
         public void _EnterPassword()
         {
-
             credentials _cred = new credentials();
 
 
